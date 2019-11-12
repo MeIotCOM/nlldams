@@ -32,7 +32,7 @@ MongoDB 的集群部署方案中有三类角色:实际数据存储结点(Shared 
 
 ### 3. MongoDB 读写数据的流程如图:
 
-![img](./illustration/mangodb-io-flow.png"MangoDB 数据读写流程")
+![img](./illustration/mangodb-io-flow.png)
 
 - 写入数据时，先由客户端访问路由结点，向配置结点获取相关信息后，将数据写入存储结点。
 - 读取数据时，由客户端访问路由结点，向配置结点获取相关信息后，对存储结点进行访问，获取到相应数据，再经由路由结点将数据返回至客户端。
