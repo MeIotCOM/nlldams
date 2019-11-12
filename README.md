@@ -1,6 +1,5 @@
-#  <center> Networked liquid level monitoring and management system  </center>
-
-#  <center> 网络化液面监测与管理系统 </center>
+# 网络化液面监测与管理系统
+## Networked liquid level monitoring and management system
 
 ## 目录
 
