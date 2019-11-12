@@ -44,13 +44,13 @@
 
 ## 贡献者们
 
- 另请参阅参与此项目的[贡献者](https://yq.aliyun.com/go/articleRenderRedirect?url=contributors)列表。 
+ 另请参阅参与此项目的[贡献者]()列表。 
 
 
 
 ## 许可证
 
- 此项目根据 Apache License  Version 2.0 许可证获得许可 - 有关详细信息，请参阅 [LICENSE](LICENSE) 文件。 
+ 此项目根据 Apache License  Version 2.0 许可证获得许可 - 有关详细信息，请参阅 [LICENSE](./LICENSE) 文件。 
 
 
 
