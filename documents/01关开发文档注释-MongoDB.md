@@ -32,14 +32,14 @@ MongoDB 的集群部署方案中有三类角色:实际数据存储结点(Shared 
 
 ### 3. MongoDB 读写数据的流程如图:
 
-![img](D:\Eclipse-Works\workspace\nllmams\documents\illustration\mangodb-io-flow.png "MangoDB 数据读写流程")
+![img](.\illustration\mangodb-io-flow.png"MangoDB 数据读写流程")
 
 - 写入数据时，先由客户端访问路由结点，向配置结点获取相关信息后，将数据写入存储结点。
 - 读取数据时，由客户端访问路由结点，向配置结点获取相关信息后，对存储结点进行访问，获取到相应数据，再经由路由结点将数据返回至客户端。
 - 对于复本集，又有主和从两种角色，写数据和读数据也是不同，写数据的过程是只写到主结点中，由主结点以异步的方式同步到从结点中。而读数据则只要从任一结点中读取，具体到哪个结点读取是可以指定的。
 - 对于 MongoDB 的分片，假设我们以某一索引键(ID)为片键，ID 的区间[0,50)，划分成 5 个 chunk，分别存储到 3 个片服务器中，可以进行如下分片:
 
-![img](D:\Eclipse-Works\workspace\nllmams\documents\illustration\mongdb-share-key-space.png)
+![img](.\illustration\mongdb-share-key-space.png)
 
  当数据量很大，需要增加片服务器时，只需移动 chunk 来均分数据即可。配置结点：存储配置文件的服务器其实存储的是片键与 chunk 以及 chunk 与 server 的映射关 系。路由结点：路由角色的结点在分片的情况下起到负载均衡的作用。 
 
